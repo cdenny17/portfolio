@@ -101,7 +101,7 @@ export default function Home(props) {
     return (
         <div className="App" style={{ position: 'relative', backgroundColor: '#1F7C99' }}>
             <canvas ref={canvas}></canvas>
-            <div className={classNames('container blue')} style={{ position: 'absolute', top: 0, left: 0, right: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height: 150, }}>
+            <div className={classNames('container blue')} style={{ position: 'absolute', top: 0, left: 0, right: 0, paddingTop: '1.25em', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height: 150, }}>
                 <h1>Christian Denny</h1>
                 <h2>Front-End Web 3D & VR Developer</h2>
                 <p>Site Under Construction</p>

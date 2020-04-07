@@ -5,7 +5,7 @@ import classNames from 'classnames';
 export default function Header(props) {
     let location = useLocation().pathname;
     return (
-        <header>
+        <header className=''>
             <nav className={classNames('container', 'blue')}>
                 <ul className='nav nav-tabs'>
                     <li className='nav-item'>
