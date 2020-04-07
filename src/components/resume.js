@@ -1,13 +1,11 @@
 import React from 'react';
+import Coming from './img/comingsoon.jpg';
 
 export default function Resume(props) {
     return (
         <div>
-            <div className='container-fluid'>
-                <div className='row'>
-                    <div className='col-md ml-md-3'>This is my resume</div>
-                    <div className='col-md'>download my resume because it is awesome</div>
-                </div>
+            <div className='embed-responsive embed-responsive-4by3' style={{}} >
+                <iframe className='embed-responsive-item' style={{}} title="Resume" src='https://christiandenny.com/christian-resume.pdf' allowFullScreen></iframe>
             </div>
         </div>
     );

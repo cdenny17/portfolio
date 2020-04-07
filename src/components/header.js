@@ -6,7 +6,7 @@ export default function Header(props) {
     let location = useLocation().pathname;
     return (
         <header>
-            <nav className="container">
+            <nav className={classNames('container', 'blue')}>
                 <ul className='nav nav-tabs'>
                     <li className='nav-item'>
                         <Link className={classNames('nav-link', { active: location === '/' })} to="/">Home</Link>

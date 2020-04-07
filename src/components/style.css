@@ -1,0 +1,30 @@
+.nav-link {
+    color: #1F7C99;
+}
+
+.nav-link.active {
+    color: #7F7CAF !important; 
+}
+.nav {
+    color: #1F7C99;
+}
+
+.blue {
+    color:#1F7C99;
+}
+
+.grey {
+    color: #9FB4C7
+}
+
+.light {
+    color: #EEEEFF
+}
+
+.green {
+    color: #9FB798
+}
+
+.purple {
+    color: #7F7CAF
+}

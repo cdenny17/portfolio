@@ -9,6 +9,9 @@ import {
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header';
+import Footer from './components/footer';
+import "./components/style.css";
+
 
 function App() {
   return (
@@ -25,7 +28,7 @@ function App() {
           <Home />
         </Route>
       </Switch>
-
+      <Footer />
     </Router>
   );
 }
