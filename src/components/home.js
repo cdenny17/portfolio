@@ -103,24 +103,28 @@ export default function Home(props) {
             <canvas ref={canvas}></canvas>
             <div className={classNames('container blue')} style={{ position: 'absolute', top: 0, left: 0, right: 0, paddingTop: '1.25em', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height: 150, }}>
                 <h1>Christian Denny</h1>
-                <h2>Front-End Web 3D & VR Developer</h2>
-                <p>Site Under Construction</p>
+                <h2>Front-End & Virtual Reality Developer</h2>
             </div>
-            <div className="container" style={{ marginBottom: '20px' }}>
+            <div className="container">
 
 
                 <div className={classNames('row light')} style={{ backgroundColor: '#1F7C99', paddingTop: '40px', paddingBottom: '40px', justifyContent: 'center' }}>
-                    <div className='col-sm' style={{ maxWidth: '300px' }}>
+                    <div className='col-sm' style={{ maxWidth: '350px', marginBottom: 15 }}>
                         <div className={classNames('card')}>
                             <img src={Headshot} style={{ objectFit: 'contain' }} className='card-img-top' alt='computer' />
                             <div className={classNames('card-body blue')}>
-                                <p>Christian Denny</p>
-                                <p>Front-End Web, 3D, and Virtual Reality Developer </p>
+                                <h2>Christian Denny</h2>
+                                <p>Front-End & Virtual Reality Developer </p>
                             </div>
                         </div>
                     </div>
                     <div className='col-sm' style={{ display: 'flex', alignItems: 'center', }}>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer diam est, porttitor sit amet nisi quis, sodales posuere tellus. Sed a scelerisque arcu. Nunc sed mollis orci, et dictum ex. Pellentesque dui dolor, gravida et lectus nec, venenatis porttitor mi. Maecenas eget quam quam. Donec in neque rutrum, ultrices odio quis, posuere eros. Aenean bibendum pretium nisl, a lobortis ipsum scelerisque at. Etiam sapien felis, ornare at arcu ac, hendrerit interdum mi. Integer sed blandit ipsum, nec placerat neque. Duis in dictum mauris, vitae dictum velit.</p>
+                        <p>Making web-based 3D experiences is something I love learning about.
+                        Finding new and creative ways to utilize the relatively new abilities of the WebXR API has been challenging and exciting.
+                        Pushing myself to learn new skills in Web and VR development has afforded me the opportunity to collaborate on many cutting edge and interesting projects.
+                        Please visit my projects page, or my GitHub account to find a sampling of the work I have done.
+                        If you are interested in using Virtual Reality, 3D web environments, or web-based Augmented Reality for your company,
+                        I would be delighted to help you achieve that goal.</p>
                     </div>
                 </div>
 

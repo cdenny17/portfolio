@@ -1,3 +1,7 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .nav-link {
     color: #1F7C99;
 }
@@ -28,4 +32,41 @@
 
 .purple {
     color: #7F7CAF
+}
+
+footer {
+    border-top: 1px solid  #7F7CAF;
+    padding: 15px;
+}
+
+footer img {
+    margin: 15px
+}
+
+.card-deck .card img, .card-deck .card video {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-deck {
+    margin-bottom: 30px;
+}
+
+.card a {
+    color: #1F7C99;
+}
+
+h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 4.5em;
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 12pt;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
 }
