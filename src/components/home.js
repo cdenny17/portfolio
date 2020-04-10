@@ -57,6 +57,7 @@ export default function Home(props) {
         new MTLLoader(manager)
             .load('https://christiandenny.com/models/desk.mtl', materials => {
                 materials.preload();
+                console.log(materials);
                 const loader = new OBJLoader(manager);
                 loader.setMaterials(materials).load('https://christiandenny.com/models/desk.obj', object => {
                     let scale = 0.01;
@@ -68,6 +69,11 @@ export default function Home(props) {
                     object.position.z = 0;
                     object.position.y = -8.5;
                     object.rotation.x = .0;
+                    console.log(object);
+                    object.children.forEach(obj => {
+                        obj.material.side = THREE.DoubleSide;
+                    });
+
                     let group = new THREE.Group();
                     group.add(object);
                     scene.add(group);
@@ -108,7 +114,11 @@ export default function Home(props) {
 
     return (
         <div className="App" style={{ position: 'relative', backgroundColor: '#1F7C99' }}>
-            <canvas ref={canvas}></canvas>
+            <div className='canvas-container'>
+                <canvas ref={canvas}></canvas>
+                <div className='canvas-side-left'></div>
+                <div className='canvas-side-right'></div>
+            </div>
             <div className={classNames('container blue')} style={{ position: 'absolute', top: 0, left: 0, right: 0, paddingTop: '1.25em', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height: 150, }}>
                 <h1>Christian Denny</h1>
                 <h2>Front-End & Virtual Reality Developer</h2>

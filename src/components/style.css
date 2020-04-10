@@ -17,6 +17,24 @@
     color: #1F7C99;
 }
 
+.canvas-wrapper {
+    position: relative;
+}
+
+.canvas-side-left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 13%;
+}
+.canvas-side-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 13%;
+}
 
 .blue {
     color:#1F7C99;
