@@ -6,7 +6,7 @@ import Git from './img/gitIcon2.png';
 
 export default function Footer() {
     return (
-        <footer>
+        <footer className="footer mt-auto py-3">
             <div className='container blue' >
                 <div className='row' style={{}}>
                     <a href="https://www.linkedin.com/in/christian-denny-6b403817/" target="_blank">

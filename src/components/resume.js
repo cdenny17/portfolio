@@ -1,12 +1,13 @@
 import React from 'react';
+import classNames from 'classnames';
 import Coming from './img/comingsoon.jpg';
+import ResumeImg from './img/resume-color.png';
 
 export default function Resume(props) {
     return (
-        <div>
-            <div className='embed-responsive' style={{ height: 'calc(100vh - 140px)' }} >
-                <iframe className='embed-responsive-item' style={{}} title="Resume" src='https://christiandenny.com/christian-resume.pdf' allowFullScreen></iframe>
-            </div>
+        <div className="resume-wrapper">
+            <button type='button' className='btn btn-outline-primary resume-button'><a href="https://christiandenny.com/christian-resume-color.pdf" target='_blank' rel="noopener noreferrer" download>View or Download PDF</a></button>
+            <img src={ResumeImg} className={classNames('img-fluid resume-img')} alt='resume' />
         </div>
     );
 }

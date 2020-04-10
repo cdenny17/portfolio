@@ -64,8 +64,10 @@ export default function Home(props) {
                     object.position.z = -12;
                     object.position.y = -8;
                     object.rotation.x = .40;
-                    scene.add(object);
-                    controls = new DragControls([object], camera.current, canvas.current)
+                    let group = new THREE.Group();
+                    group.add(object);
+                    scene.add(group);
+                    controls = new DragControls([group], camera.current, canvas.current)
                 }, (xhr) => console.log(xhr.loaded), err => console.log(err));
             }, progress => {
                 console.log(progress);

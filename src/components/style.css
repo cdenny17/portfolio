@@ -9,6 +9,10 @@
 .nav-link.active {
     color: #7F7CAF !important; 
 }
+
+.nav-link:hover {
+    color: #7F7CAF !important; 
+}
 .nav {
     color: #1F7C99;
 }
@@ -44,7 +48,7 @@ footer img {
 }
 
 .card-deck .card img, .card-deck .card video {
-    height: 200px;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -60,6 +64,41 @@ h1 {
     font-family: 'Crimson Text', serif;
     font-size: 4.5em;
 }
+.btn:hover {
+    background-color: #1F7C99;
+    color: #EEEEFF;
+}
+
+.btn-outline-primary:hover {
+    color: #EEEEFF;
+    border-color: #1F7C99;
+    background-color: #1F7C99;
+}
+.btn-outline-primary a {
+    color: #1F7C99;
+    border-color: #1F7C99;
+}
+.btn-outline-primary:hover a {
+    color: #EEEEFF;
+    border-color: #1F7C99;
+    text-decoration: none;
+}
+.btn-outline-primary {
+    color: #1F7C99;
+    border-color: #1F7C99;
+}
+
+.resume-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.resume-button:hover {
+    background-color: #1F7C99;
+    color: #EEEEFF;
+}
 
 @media screen and (max-width: 768px) {
     h2 {
@@ -68,5 +107,42 @@ h1 {
 
     h1 {
         font-size: 2.5em;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .card-deck .card {
+        flex: initial;
+        margin-right: initial;
+        margin-bottom: 15px;
+        margin-left: initial;
+    }
+}
+
+@media (min-width: 900px) {
+    .resume-img {
+    max-width: 900px;
+}
+
+}
+
+@media (min-width: 991px) {
+    .card-deck .card {
+        flex: 1 0;
+        margin-right: 15px;
+        margin-bottom: 0;
+        margin-left: 15px;
+    }
+
+    .card-deck .card img, .card-deck .card video {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 450px) {
+    .card-deck .card img, .card-deck .card video {
+        object-fit: contain;
     }
 }
