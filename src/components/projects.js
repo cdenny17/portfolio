@@ -1,8 +1,8 @@
 import React from 'react';
-import WebVr from './img/webvr2.png';
-import VanParks from './img/vanparks.png';
-import ChoreApp from './img/chore-app.png';
-import Story from './img/story.png';
+import WebVr from './img/webvr2.jpg';
+import VanParks from './img/vanparks.jpg';
+import ChoreApp from './img/chore-app.jpg';
+import Story from './img/story.jpg';
 import MessageVideo from './img/message.mp4';
 import RevoltVideo from './img/revolt-video.mp4';
 

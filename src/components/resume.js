@@ -1,6 +1,5 @@
 import React from 'react';
 import classNames from 'classnames';
-import Coming from './img/comingsoon.jpg';
 import ResumeImg from './img/resume-color.png';
 
 export default function Resume(props) {
