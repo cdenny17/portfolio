@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import Headshot from './img/headshot.jpg';
 import * as THREE from 'three';
 import { DragControls } from 'three/examples/jsm/controls/DragControls';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
 import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader';
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
@@ -38,11 +39,14 @@ export default function Home(props) {
         scene.add(ambientLight);
 
         // scene.add(cube);
-        camera.current.position.z = 5;
+        camera.current.position.z = 18;
+        camera.current.position.y = 5;
+
         var animate = function () {
             requestAnimationFrame(animate);
             // cube.rotation.x += 0.01;
             // cube.rotation.y += 0.01;
+            if (controls) controls.update();
             renderer.current.render(scene, camera.current);
         };
         animate();
@@ -60,14 +64,16 @@ export default function Home(props) {
                     object.scale.y = scale;
                     object.scale.z = scale;
 
-                    object.position.x = 0;
-                    object.position.z = -12;
-                    object.position.y = -8;
-                    object.rotation.x = .40;
+                    object.position.x = -0.3;
+                    object.position.z = 0;
+                    object.position.y = -8.5;
+                    object.rotation.x = .0;
                     let group = new THREE.Group();
                     group.add(object);
                     scene.add(group);
-                    controls = new DragControls([group], camera.current, canvas.current)
+                    // controls = new DragControls([group], camera.current, canvas.current)
+                    controls = new OrbitControls(camera.current, canvas.current)
+
                 }, (xhr) => console.log(xhr.loaded), err => console.log(err));
             }, progress => {
                 console.log(progress);

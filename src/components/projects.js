@@ -73,7 +73,7 @@ export default function Projects(props) {
                             muted
                         />
                         <div className='card-body'>
-                            <p><a href='https://christiandenny.com/message'> Check out The Message </a></p>
+                            <p><a href='https://dtc-wsuv.org/cdenny17/message/'> Check out The Message </a></p>
                             <p>Using Three.js I rendered a cube in a 3D space that plays Marshall McLuhan's video on "The Media is the Massage". It was a fun project to test out video capabilities in Three.js.</p>
                         </div>
                     </div>
