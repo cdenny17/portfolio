@@ -129,6 +129,15 @@ h1 {
     color: #EEEEFF;
 }
 
+ h3 {
+    font-size: 1.25rem;
+    color: #1F7C99;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
 @media screen and (max-width: 768px) {
     h2 {
         font-size: 12pt;
