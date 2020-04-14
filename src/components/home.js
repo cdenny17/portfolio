@@ -32,10 +32,10 @@ export default function Home(props) {
         renderer.current = new THREE.WebGLRenderer({ canvas: canvas.current, antialias: true });
         renderer.current.setSize(window.innerWidth, window.innerHeight);
         scene.background = new THREE.Color('#EEEEFF')
-        var directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
-        directionalLight.position.set(0, 1, 0);
+        var directionalLight = new THREE.DirectionalLight(0xf7f7f0, 0.50);
+        directionalLight.position.set(0, 3, 2);
         scene.add(directionalLight);
-        var ambientLight = new THREE.AmbientLight(0xffffff, 0.5)
+        var ambientLight = new THREE.AmbientLight(0xffffff, 0.85)
         scene.add(ambientLight);
 
         // scene.add(cube);
@@ -55,20 +55,20 @@ export default function Home(props) {
         manager.addHandler(/\.dds$/i, new DDSLoader());
 
         new MTLLoader(manager)
-            .load('https://christiandenny.com/models/desk.mtl', materials => {
+            .load('https://christiandenny.com/models/desk6.mtl', materials => {
                 materials.preload();
                 console.log(materials);
                 const loader = new OBJLoader(manager);
-                loader.setMaterials(materials).load('https://christiandenny.com/models/desk.obj', object => {
+                loader.setMaterials(materials).load('https://christiandenny.com/models/desk6.obj', object => {
                     let scale = 0.01;
                     object.scale.x = scale;
                     object.scale.y = scale;
                     object.scale.z = scale;
 
                     object.position.x = -0.3;
-                    object.position.z = 0;
+                    object.position.z = 3.5;
                     object.position.y = -8.5;
-                    object.rotation.x = .0;
+                    object.rotation.x = -.08;
                     console.log(object);
                     object.children.forEach(obj => {
                         obj.material.side = THREE.DoubleSide;
