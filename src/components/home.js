@@ -33,7 +33,7 @@ export default function Home(props) {
         renderer.current.setSize(window.innerWidth, window.innerHeight);
         scene.background = new THREE.Color('#EEEEFF')
         var directionalLight = new THREE.DirectionalLight(0xf7f7f0, 0.50);
-        directionalLight.position.set(0, 3, 2);
+        directionalLight.position.set(0, 5, 2.5);
         scene.add(directionalLight);
         var ambientLight = new THREE.AmbientLight(0xffffff, 0.85)
         scene.add(ambientLight);
