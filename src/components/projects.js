@@ -1,5 +1,5 @@
 import React from 'react';
-import WebVr from './img/webvr2.jpg';
+import WebVr from './img/webvr4.png';
 import VanParks from './img/vanparks.jpg';
 import ChoreApp from './img/chore-app.jpg';
 import Story from './img/story.jpg';
